@@ -1,0 +1,10 @@
+<aside>
+    <span class="section">LATEST POSTS</span>
+    <div>
+        <ul>
+            {{ range first 5 .Site.Pages }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</aside>

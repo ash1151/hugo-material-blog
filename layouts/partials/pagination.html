@@ -1,0 +1,13 @@
+<div>
+{{ if .Paginator.HasPrev }}
+	<a href="{{ .Paginator.Prev.URL }}">이전</a>
+{{ else }}
+	<span>이전</span>
+{{ end }}
+{{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
+{{ if .Paginator.HasNext }}
+	<a href="{{ .Paginator.Next.URL }}">다음</a>
+{{ else }}
+	<span>다음</span>
+{{ end }}
+</div>

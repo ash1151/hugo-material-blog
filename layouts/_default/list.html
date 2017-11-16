@@ -21,24 +21,19 @@
 		<div class="wrapper">
 			<h1>Pages in {{ .Title | singularize }}</h1>
 
-			{{ range .Data.Pages }}
-			<a href="{{ .Permalink }}" title="{{ .Title }}">
-				<h2>{{ .Title }}</h2>
-			</a>
-
-			<br>
-			{{ printf "%s" .Summary | markdownify }}
-
-			<hr>
+			{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+			{{ range $paginator.Pages }}
+				{{ partial "summary.html" . }}
 			{{ end }}
+			{{ partial "pagination.html" . }}
 
 			<aside class="copyright" role="note">
 				{{ with .Site.Params.copyright }}
 				&copy; {{ now.Format "2006" }} {{ . }} &ndash;
 				{{ end }}
-				Documentation built with
+				Built with
 				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
-				using the
+				using customized
 				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
 			</aside>
 		</div>
