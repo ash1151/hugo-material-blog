@@ -308,7 +308,7 @@ body {
 
 @supports (-webkit-appearance:none) {
     body {
-        background: #e84e40
+        background: #303030
     }
 }
 
@@ -343,7 +343,7 @@ hr {
 
 .header {
     box-shadow: 0 1.5px 3px rgba(0, 0, 0, .24), 0 3px 8px rgba(0, 0, 0, .05);
-    background: #e84e40;
+    background: #303030;
     color: #fff
 }
 
@@ -585,11 +585,11 @@ pre {
 .drawer .toc a.current,
 .drawer .toc a:focus,
 .drawer .toc a:hover {
-    color: #e84e40
+    color: #303030
 }
 
 .drawer .anchor a {
-    border-left: 2px solid #e84e40
+    border-left: 2px solid #303030
 }
 
 .drawer .section {
@@ -813,8 +813,8 @@ pre span {
 }
 
 .ios.standalone .article {
-    background: -webkit-linear-gradient(top, #fff 50%, #e84e40 0);
-    background: linear-gradient(180deg, #fff 50%, #e84e40 0)
+    background: -webkit-linear-gradient(top, #fff 50%, #303030 0);
+    background: linear-gradient(180deg, #fff 50%, #303030 0)
 }
 
 .ios.standalone .article .wrapper {
@@ -825,7 +825,7 @@ pre span {
 .article a,
 .article h1,
 .article h2 {
-    color: #e84e40
+    color: #303030
 }
 
 .article code {
@@ -879,7 +879,7 @@ pre span {
 }
 
 .footer {
-    background: #e84e40;
+    background: #303030;
     color: #fff
 }
 
@@ -910,7 +910,7 @@ pre span {
 }
 
 .admonition.warning {
-    background: #e84e40
+    background: #303030
 }
 
 .admonition a,
@@ -1316,7 +1316,7 @@ h1 .article .headerlink {
 }
 
 .results .meta {
-    background: #e84e40;
+    background: #303030;
     color: #fff
 }
 
@@ -1509,7 +1509,7 @@ h1 .article .headerlink {
     }
     .project {
         box-shadow: 0 1.5px 3px rgba(0, 0, 0, .24), 0 3px 8px rgba(0, 0, 0, .05);
-        background: #e84e40;
+        background: #303030;
         color: #fff
     }
     .drawer {
@@ -1717,6 +1717,6 @@ h1 .article .headerlink {
         box-shadow: none
     }
     .article table th {
-        color: #e84e40
+        color: #303030
     }
 }
