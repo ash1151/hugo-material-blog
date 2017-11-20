@@ -166,7 +166,7 @@ h6 {
 }
 
 pre {
-    background: rgba(0, 0, 0, .05)
+    background: #eee;
 }
 
 pre,
@@ -829,7 +829,7 @@ pre span {
 }
 
 .article code {
-    /* background: #eee */
+    background: #eee
 }
 
 .article kbd {
@@ -1025,7 +1025,7 @@ h1 .article .headerlink {
 }
 
 .article p>code {
-    background-color: #ccc;
+    background-color: #eee;
     border-radius: 4px;
     padding: 2px 8px;
     white-space: nowrap;

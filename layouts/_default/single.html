@@ -26,7 +26,9 @@
 		<div class="wrapper">
 			<h1>{{ .Title }} {{ if .IsDraft }} (Draft){{ end }}</h1>
 			<div class="metadata">
+				{{if .Data.Post }}
 				<time>{{ .Date.Format "2006년 01월 02일" }}</time>
+				{{ end }}
 				{{ range .Params.tags }}
 				<a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
 				{{ end }}
