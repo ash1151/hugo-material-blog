@@ -1,11 +1,17 @@
 baseurl = "https://example.org/"
-languageCode = "en-us"
-title = "Material Docs"
-theme = "hugo-material-docs"
+languageCode = "ko-kr"
+title = "Material Blog"
+theme = "hugo-material-blog"
 metadataformat = "yaml"
 canonifyurls = true
+pygmentsCodeFences = true
+pygmentsStyle = "friendly"
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""
+
+[permalinks]
+	post = "/post/:filename/"
+	fixed = "/:filename/"
 
 [params]
 	# General information
@@ -35,8 +41,8 @@ googleAnalytics = ""
     	accent  = "teal"
 
     [params.font]
-    	text = "Ubuntu"
-    	code = "Ubuntu Mono"
+    	text = "Roboto"
+    	code = "Roboto Mono"
 
 
 [social]
@@ -46,28 +52,23 @@ googleAnalytics = ""
 
 
 [[menu.main]]
-	name   = "Material"
+	name   = "Home"
 	url    = "/"
-	weight = 0
-
-[[menu.main]]
-	name   = "Getting started"
-	url    = "getting-started/"
 	weight = 10
 
 [[menu.main]]
-	name   = "Adding content"
-	url    = "adding-content/"
+	name   = "About"
+	url    = "about/"
 	weight = 20
 
 [[menu.main]]
-	name   = "Roadmap"
-	url    = "roadmap/"
+	name   = "Posts"
+	url    = "post/"
 	weight = 30
 
 [[menu.main]]
-	name   = "License"
-	url    = "license/"
+	name   = "Categories"
+	url    = "category/"
 	weight = 40
 
 
