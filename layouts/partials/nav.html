@@ -17,3 +17,14 @@
   {{ end }}
 </li>
 {{ end }}
+
+<hr />
+<!-- TODO: Change Style -->
+{{ $categories := .Site.Taxonomies.categories }}
+  <ul>
+    {{ range $key, $value := $categories }}
+      <li>
+        <a href="/categories/{{ $key | urlize }}">{{ $key | humanize }} ({{$value.Count}})</a>
+      </li>
+    {{ end }}
+  </ul>
